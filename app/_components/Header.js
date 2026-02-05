@@ -31,7 +31,7 @@ function Header() {
     <header
       className={`fixed top-0 left-0 w-full z-50 backdrop-blur-md transition-transform duration-300 
         ${show ? "translate-y-0" : "-translate-y-30"}
-        bg-charcoal-900/75 shadow-md flex items-center justify-between px-8 py-2`}
+        bg-charcoal-900/75 shadow-md flex items-center justify-between px-8 pt-2`}
     >
       <Logo />
       <Navigation />

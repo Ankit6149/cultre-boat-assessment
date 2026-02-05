@@ -82,7 +82,8 @@ function Footer() {
 
       {/* Copyright */}
       <div className="max-w-7xl mx-auto px-8 py-6 text-center opacity-70">
-        © {new Date().getFullYear()} Cultre Boat. All rights reserved.
+        © {new Date().getFullYear()} Cultre Boat & Ankit Bhardwaj. All rights
+        reserved. Designed & built by Ankit Bhardwaj.
       </div>
     </footer>
   );

@@ -18,9 +18,11 @@ function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  const base = "transition-all hover:duration-500 underline-offset-4";
-  const inactive = "text-gold-300 hover:text-gold-500 hover:underline";
-  const active = "text-gold-500 underline font-medium dark:text-gold-400";
+  const base = "transition-all duration-200";
+  const inactive =
+    "text-gold-300 hover:text-gold-500 hover:border-b-3 pb-5 mt-2 transtion-all duration-100";
+  const active =
+    "text-gold-500 border-b-3 pb-5 mt-2 font-medium dark:text-gold-400";
 
   function getClass(href) {
     const isActive =
@@ -46,7 +48,7 @@ function Navigation() {
       </div>
 
       {/* Desktop nav */}
-      <nav className="hidden lg:flex items-center gap-9 px-6 lg:text-m xl:text-lg text-gold-300">
+      <nav className="hidden lg:flex items-center gap-9 px-6 lg:text-m xl:text-lg text-gold-300 transition-all duration-300">
         {links.map(({ href, label }) => (
           <Link key={href} href={href} className={getClass(href)}>
             {label}
@@ -58,7 +60,7 @@ function Navigation() {
       {/* Mobile dropdown */}
       <nav
         className={
-          "xl:hidden absolute right-0 mt-4 w-56 rounded-xl border bg-charcoal-900 shadow-lg transition-all duration-200 " +
+          "xl:hidden absolute right-0 mt-4 w-56 rounded-xl border bg-charcoal-800 shadow-lg transition-all duration-200 " +
           (open
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-2 pointer-events-none")

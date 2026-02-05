@@ -30,3 +30,15 @@ export default function Home() {
     </div>
   );
 }
+
+// TESTING PAGE - DELETE LATER
+// export default async function Page() {
+//   // 1. Force a 3-second wait
+//   await new Promise((resolve) => setTimeout(resolve, 3000));
+
+//   return (
+//     <div>
+//       <h1>Page Loaded!</h1>
+//     </div>
+//   );
+// }

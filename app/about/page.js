@@ -21,7 +21,7 @@ function page() {
         <FadeIn>
           <div>
             <h1 className="text-4xl md:text-5xl font-semibold mb-4">
-              About Cultre Boat
+              About <i className="text-gold-600">Cultre</i> Boat
             </h1>
             <p className="text-lg md:text-xl leading-relaxed opacity-90">
               Cultre Boat helps brands stand out in an increasingly crowded
@@ -34,8 +34,10 @@ function page() {
         {/* Mission / Values */}
         <FadeIn delay={200}>
           <div>
-            <h2 className="text-3xl mb-6">Our Mission & Values</h2>
-            <ul className="list-disc list-inside space-y-3 text-lg md:text-xl opacity-90">
+            <h2 className="text-3xl mb-6 underline underline-offset-4">
+              Our Mission & Values
+            </h2>
+            <ul className="list-disc list-inside space-y-3 text-lg md:text-xl opacity-90 font-medium">
               {values.map((val, idx) => (
                 <li key={idx}>{val}</li>
               ))}
@@ -48,8 +50,8 @@ function page() {
           <div>
             <h2 className="text-3xl mb-6">Our Journey</h2>
             <p className="text-lg md:text-xl leading-relaxed opacity-90">
-              Founded in [Year], Cultre Boat started as a small studio with a
-              big idea: to create brands people remember. Over the years, we’ve
+              Founded in 2017, Cultre Boat started as a small studio with a big
+              idea: to create brands people remember. Over the years, we’ve
               partnered with startups, scale-ups, and established companies,
               helping them define identity, strategy, and storytelling.
             </p>

@@ -47,11 +47,15 @@ export default function Contact() {
         {/* Intro */}
         <div className="max-w-3xl mx-auto text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-semibold mb-4">
-            Contact Us
+            Contact <i className="text-gold">Us</i>
           </h1>
           <p className="text-lg md:text-xl opacity-90">
-            Have a project in mind or just want to say hello? Fill out the form
-            below, and we’ll get back to you as soon as possible.
+            Have a project in mind or just want to say{" "}
+            <b>
+              <i>Hello</i>
+            </b>
+            ? Fill out the form below, and we’ll get back to you as soon as
+            possible.
           </p>
         </div>
       </FadeIn>
@@ -132,7 +136,9 @@ export default function Contact() {
             <p>Email: hello@cultreboat.com</p>
             <p>Phone: +91 1234 567 890</p>
             <p>Address: 123 Brand St, Creative City</p>
-            <p className="mt-4">We usually reply within 24–48 hours.</p>
+            <p className="mt-4">
+              We usually reply within <b>24–48 hours</b>.
+            </p>
           </div>
         </div>
       </FadeIn>

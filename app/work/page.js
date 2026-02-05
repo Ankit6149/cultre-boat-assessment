@@ -40,10 +40,12 @@ function Page() {
         {/* Page Heading */}
 
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <h1 className="text-4xl md:text-5xl font-semibold mb-4">Our Work</h1>
+          <h1 className="text-4xl md:text-5xl font-semibold mb-4">
+            Our <i className="text-gold-600">Work</i>
+          </h1>
           <p className="text-lg md:text-xl opacity-90">
-            We bring ideas to life through design, strategy, and storytelling.
-            Explore some of our selected work.
+            We bring ideas to life through <b>design</b>, <b>strategy</b>, and{" "}
+            <b>storytelling</b>. Explore some of our selected work.
           </p>
         </div>
       </FadeIn>
@@ -52,21 +54,23 @@ function Page() {
         <FadeIn delay={0.2}>
           {/* Main Projects */}
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 transition-all ease-in-out delay-200 gap-12 mb-32">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 transition-all ease-in duration-500 gap-12 mb-32">
             {projects.map((project, idx) => (
               <div
                 key={idx}
                 className="relative rounded-xl bg-offwhite-600 overflow-hidden cursor-pointer group"
                 onClick={() => setSelectedProject(project)}
               >
-                <div className="h-80 w-full"></div>
-                <div className="absolute inset-0 bg-offwhite-700 bg-opacity-40 opacity-0 group-hover:opacity-100 duration-300 transition-all ease-in-out flex items-center justify-center">
+                <div className="h-80 w-full transition all duration-300"></div>
+                <div className="absolute inset-0 bg-offwhite-700 bg-opacity-40 opacity-0 group-hover:opacity-100 duration-300 transition-all ease-in flex items-center justify-center">
                   <p className=" text-center text-2xl text-charcoal-800 px-4 transition-all">
                     {project.tagline}
                   </p>
                 </div>
-                <div className="mt-4 bg-gold-600 transition-all">
-                  <h3 className="text-2xl  font-medium">{project.name}</h3>
+                <div className="mt-4 transition-all align-middle">
+                  <h3 className="text-2xl text-gold-800 transition-all duration-700 font-medium">
+                    {project.name}
+                  </h3>
                 </div>
               </div>
             ))}

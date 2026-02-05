@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Logo() {
   return (
-    <div className="relative min-h-16 min-w-36 lg:h-22 lg:w-44 transition-all">
+    <div className="relative min-h-16 min-w-36 lg:h-18 lg:w-auto transition-all">
       <Link href="/">
         <Image
           src="/logo-transparent.png"

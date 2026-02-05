@@ -29,18 +29,18 @@
   --color-offwhite-900: #585144;
   --color-offwhite-950: #3a352c;
 
-  /* --- Gold --- */
-  --color-gold-50: #faf6ee;
-  --color-gold-100: #f4ecd9;
-  --color-gold-200: #e8d6af;
-  --color-gold-300: #ddc186;
-  --color-gold-400: #d2af6a;
-  --color-gold-500: #c6a15b;
-  --color-gold-600: #b28d4f;
-  --color-gold-700: #8f7140;
-  --color-gold-800: #6c5531;
-  --color-gold-900: #4a3a22;
-  --color-gold-950: #332816;
+  /* --- Gold (Dynamic) --- */
+  --color-gold-50: var(--gold-50);
+  --color-gold-100: var(--gold-100);
+  --color-gold-200: var(--gold-200);
+  --color-gold-300: var(--gold-300);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --color-gold-800: var(--gold-800);
+  --color-gold-900: var(--gold-900);
+  --color-gold-950: var(--gold-950);
 
   /* --- Orange --- */
   --color-orange-50: #fff3ee;
@@ -76,16 +76,42 @@
 /* ---------------------------
    Theme Variables (v4 best practice)
 ----------------------------*/
-:root {
-  --background: #fbfaf8;
-  --foreground: #1a1a1a;
-  --texture: url("/light-texture.png");
-}
+@layer base {
+  :root {
+    --background: #fbfaf8;
+    --foreground: #1a1a1a;
+    --texture: url("/light-texture.png");
 
-.dark {
-  --background: #0f0f0f;
-  --foreground: #ededed;
-  --texture: url("/dark-texture.png");
+    --gold-50: #faf6ee;
+    --gold-100: #f4ecd9;
+    --gold-200: #e8d6af;
+    --gold-300: #ddc186;
+    --gold-400: #d2af6a;
+    --gold-500: #c6a15b;
+    --gold-600: #b28d4f;
+    --gold-700: #8f7140;
+    --gold-800: #6c5531;
+    --gold-900: #4a3a22;
+    --gold-950: #332816;
+  }
+
+  .dark {
+    --background: #0f0f0f;
+    --foreground: #ededed;
+    --texture: url("/dark-texture.png");
+
+    --gold-50: #332816; /* Old 950 */
+    --gold-100: #4a3a22; /* Old 900 */
+    --gold-200: #6c5531; /* Old 800 */
+    --gold-300: #8f7140; /* Old 700 */
+    --gold-400: #b28d4f; /* Old 600 */
+    --gold-500: #c6a15b; /* Middle stays similiar */
+    --gold-600: #d2af6a; /* Old 400 */
+    --gold-700: #ddc186; /* Old 300 */
+    --gold-800: #e8d6af; /* Old 200 */
+    --gold-900: #f4ecd9; /* Old 100 */
+    --gold-950: #faf6ee; /* Old 50 */
+  }
 }
 
 /* ---------------------------
@@ -99,6 +125,17 @@ body {
 /* ---------------------------
    Custom Utilities
 ----------------------------*/
+@layer utilities {
+  .text-gold {
+    color: var(--color-gold-600);
+  }
+  .dark .text-gold {
+    color: var(--color-gold-400);
+  }
+  .bg-gold {
+    background-color: var(--color-gold-500);
+  }
+}
 @utility bg-texture {
   background-image: var(--texture);
   background-repeat: repeat;
