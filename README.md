@@ -329,7 +329,7 @@ By restructuring the site, we achieve measurable improvements in three key areas
 ### Assumptions Made
 1.  **Goal = Conversion:** I assumed the primary goal of the website is to convert visitors into clients or hires, rather than just serving as an art piece.
 2.  **Scalability:** I assumed the site needs to grow. The original layout is hard to update; my modular component structure allows new case studies to be added easily.
-3.  **Mobile First:** I assumed a significant portion of traffic comes from mobile devices, necessitating a responsive design (`MobileNav.js`) that works without hover states.
+3.  **Mobile First:** I assumed a significant portion of traffic comes from mobile devices, necessitating a responsive design that works without hover states.
 
 ---
 
