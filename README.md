@@ -323,6 +323,8 @@ By restructuring the site, we achieve measurable improvements in three key areas
 * **⚡ Performance:** Achieved a high Lighthouse Score by utilizing **Next.js Image Optimization** and removing heavy runtime JS libraries.
 * **♿ Accessibility:** Replaced non-semantic `<div>` buttons with semantic HTML tags (`<nav>`, `<header>`, `<main>`, `<footer>`) and added `aria-labels`.
 * **🔍 SEO:** The original site had minimal crawlable text. This version uses proper semantic headings (`h1`, `h2`), making the agency discoverable on search engines.
+<img width="1907" height="281" alt="image" src="https://github.com/user-attachments/assets/270015af-a143-4b1a-8092-3cb3cd2ae697" />
+
 
 ### Assumptions Made
 1.  **Goal = Conversion:** I assumed the primary goal of the website is to convert visitors into clients or hires, rather than just serving as an art piece.
@@ -330,63 +332,6 @@ By restructuring the site, we achieve measurable improvements in three key areas
 3.  **Mobile First:** I assumed a significant portion of traffic comes from mobile devices, necessitating a responsive design (`MobileNav.js`) that works without hover states.
 
 ---
-
-<h2>⚙️ Performance & Maintainability</h2>
-<p>This project improves on the original by focusing on engineering rigor:</p>
-<ul>
-  <li>✅ <b>Reduced JS bundle size</b></li>
-  <li>✅ <b>Fewer runtime dependencies</b></li>
-  <li>✅ <b>Cleaner layout boundaries</b></li>
-  <li>✅ <b>Predictable rendering</b></li>
-  <li>✅ <b>Easier future feature additions</b></li>
-</ul>
-
-<br>
-
-<h2>🧠 What Was Intentionally Different</h2>
-<p>Every difference was intentional, not accidental. We explicitly avoided:</p>
-<ul>
-    <li>❌ Animation overload</li>
-    <li>❌ Experimental navigation patterns</li>
-    <li>❌ Hydration hacks</li>
-    <li>❌ Heavy animation libraries</li>
-    <li>❌ Unnecessary abstractions</li>
-</ul>
-
-<br>
-
-<h2>🎯 Summary</h2>
-<p>
-This project is a <b>reinterpretation</b>, not a replica.
-</p>
-
-<table>
-  <thead>
-    <tr>
-      <th width="50%">✅ It Preserves</th>
-      <th width="50%">🚀 It Improves</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <ul>
-            <li>Brand tone</li>
-            <li>Luxury mood</li>
-            <li>Visual confidence</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-            <li>Structure & Architecture</li>
-            <li>Performance metrics</li>
-            <li>Code maintainability</li>
-            <li>Real-world usability</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
 
 ## 💻 Technical Implementation
 
